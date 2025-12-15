@@ -42,7 +42,7 @@ This approach reduces data exposure and aligns with strict compliance requiremen
 
 
 ## Connector-First & AI Usage Statement
-# Important Compliance Statement
+### Important Compliance Statement
 
 BrokerFlow does not use document ingestion, RAG (Retrieval-Augmented Generation), embeddings, or vector databases.
 
