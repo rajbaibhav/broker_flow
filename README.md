@@ -9,6 +9,54 @@ A modern React application for managing insurance policy renewals with AI-powere
 - **AI Copilot** - Gemini-powered analysis and strategy recommendations
 - **Priority Engine** - Configurable scoring algorithm for renewal urgency
 
+## Architecture Overview
+
+BrokerFlow follows a frontend-first, connector-inspired architecture designed for renewal orchestration rather than data storage.
+
+- The application is a React + TypeScript single-page application.
+
+- Renewal data is represented as structured objects suitable for broker workflows.
+
+- The Priority Engine computes renewal urgency using configurable, explainable weights.
+
+- The AI Copilot generates insights on-demand from structured renewal context.
+
+- No documents are uploaded, indexed, or persisted in any external database.
+
+This architecture focuses on decision support and workflow orchestration, not record duplication.
+
+## Security & Privacy Notes
+BrokerFlow is designed with insurance data sensitivity in mind.
+
+- No policy documents, emails, or attachments are stored by the application.
+
+- AI analysis runs only when explicitly triggered by the user.
+
+- API keys (e.g., Gemini) are entered at runtime and are not committed to the repository.
+
+- The application avoids background data ingestion and long-term storage.
+
+- All generated insights are ephemeral and session-based.
+
+This approach reduces data exposure and aligns with strict compliance requirements.
+
+
+## Connector-First & AI Usage Statement
+# Important Compliance Statement
+
+BrokerFlow does not use document ingestion, RAG (Retrieval-Augmented Generation), embeddings, or vector databases.
+
+The AI Copilot operates using a connector-first, in-context synthesis approach, where:
+
+- Only structured, user-visible renewal data is used as input
+
+- No external documents are read, stored, or indexed
+
+- AI outputs are generated in real time and discarded after use
+
+This design ensures transparency, explainability, and regulatory safety.
+
+
 ## Quick Start
 
 1. **Install dependencies:**
