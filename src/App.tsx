@@ -6,546 +6,51 @@ import {
   Settings, 
   ShieldCheck, 
   FileText, 
-  Zap, 
   AlertCircle, 
   Database,
   LogOut,
   Calendar,
-  TrendingUp,
   DollarSign,
   Clock,
-  Users,
   Target,
-  BarChart3,
-  PieChart,
-  Activity,
   CheckCircle,
-  XCircle,
   Eye,
-  Send,
-  Filter,
-  Search,
-  Plus,
-  Edit,
-  Trash2,
-  Download,
-  Upload,
-  RefreshCw,
-  Bell,
-  Star,
-  ArrowUp,
-  ArrowDown,
-  ArrowRight,
-  ChevronDown,
-  ChevronRight,
-  ExternalLink,
-  Mail,
-  Phone,
-  MapPin,
-  Building,
-  User,
-  CreditCard,
-  Briefcase,
-  Globe,
-  Shield,
-  Lock,
-  Unlock,
-  Key,
-  Info,
-  HelpCircle,
-  MessageSquare,
-  ThumbsUp,
-  ThumbsDown,
-  Share2,
-  Copy,
-  Link,
-  Bookmark,
-  Flag,
-  Tag,
-  Folder,
-  File,
-  Image,
-  Video,
-  Music,
-  Archive,
-  Paperclip,
-  Scissors,
-  Clipboard,
-  Save,
-  Printer,
-  Camera,
-  Mic,
-  Volume2,
-  VolumeX,
-  Play,
-  Pause,
-  Stop,
-  SkipBack,
-  SkipForward,
-  Repeat,
-  Shuffle,
-  Maximize,
-  Minimize,
-  RotateCcw,
-  RotateCw,
-  ZoomIn,
-  ZoomOut,
-  Move,
-  Crop,
-  Layers,
-  Grid,
   List,
-  Columns,
-  Rows,
-  Square,
-  Circle,
-  Triangle,
-  Hexagon,
-  Octagon,
-  Diamond,
-  Heart,
-  Smile,
-  Frown,
-  Meh,
-  Sun,
-  Moon,
-  Cloud,
-  CloudRain,
-  CloudSnow,
-  Zap as Lightning,
-  Thermometer,
-  Droplets,
-  Wind,
-  Compass,
-  Map,
-  Navigation,
-  Anchor,
-  Plane,
-  Car,
-  Truck,
-  Bus,
-  Train,
-  Bike,
-  Scooter,
-  Boat,
-  Rocket,
-  Satellite,
-  Wifi,
-  WifiOff,
-  Bluetooth,
-  Radio,
-  Tv,
-  Monitor,
-  Smartphone,
-  Tablet,
-  Laptop,
-  Desktop,
-  Server,
-  HardDrive,
-  Cpu,
-  MemoryStick,
-  Battery,
-  BatteryLow,
-  Power,
-  PowerOff,
-  Plug,
-  Unplug,
-  Cable,
-  Usb,
-  Headphones,
-  Speaker,
-  Gamepad2,
-  Joystick,
-  Dices,
-  Puzzle,
-  Gamepad,
-  Trophy,
-  Award,
-  Medal,
-  Gift,
-  ShoppingCart,
-  ShoppingBag,
-  CreditCard as Card,
-  Banknote,
+  Plus,
+  X,
+  Bell,
+  BarChart3,
+  TrendingUp,
+  Globe,
   Coins,
-  Wallet,
-  Receipt,
-  Calculator,
-  Scale,
-  Ruler,
-  Scissors as Cut,
-  Wrench,
-  Hammer,
-  Screwdriver,
-  Paintbrush,
-  Palette,
-  Pipette,
-  Beaker,
-  TestTube,
-  Microscope,
-  Telescope,
-  Magnet,
-  Flashlight,
-  Candle,
-  Lightbulb,
-  Lamp,
-  Lantern,
-  Torch,
-  Fire,
-  Flame,
-  Snowflake,
-  Leaf,
-  Tree,
-  Flower,
-  Flower2,
-  Seedling,
-  Cherry,
-  Apple,
-  Grape,
-  Carrot,
-  Wheat,
-  Coffee,
-  Wine,
-  Beer,
-  Milk,
-  Egg,
-  Cheese,
-  Fish,
-  Beef,
-  Chicken,
-  Salad,
-  Pizza,
-  Cake,
-  Cookie,
-  IceCream,
-  Candy,
-  Lollipop,
-  Donut,
-  Croissant,
-  Sandwich,
-  Soup,
-  Noodles,
-  Rice,
-  Bread,
-  Pretzel,
-  Bagel,
-  Waffle,
-  Pancakes,
-  Bacon,
-  Sausage,
-  Ham,
-  Steak,
-  Drumstick,
-  Popcorn,
-  Nuts,
-  Honey,
-  Jam,
-  Butter,
-  Salt,
-  Pepper,
-  Spice,
-  Herb,
-  Garlic,
-  Onion,
-  Tomato,
-  Potato,
-  Corn,
-  Broccoli,
-  Lettuce,
-  Cucumber,
-  Pepper as Bell,
-  Chili,
-  Mushroom,
-  Avocado,
-  Banana,
-  Orange,
-  Lemon,
-  Lime,
-  Strawberry,
-  Blueberry,
-  Raspberry,
-  Blackberry,
-  Peach,
-  Pear,
-  Pineapple,
-  Watermelon,
-  Melon,
-  Coconut,
-  Kiwi,
-  Mango,
-  Papaya,
-  Pomegranate,
-  Plum,
-  Apricot,
-  Fig,
-  Date,
-  Raisin,
-  Almond,
-  Walnut,
-  Peanut,
-  Cashew,
-  Pistachio,
-  Hazelnut,
-  Pecan,
-  Macadamia,
-  Brazil,
-  Pine,
-  Chestnut,
-  Acorn,
-  Sunflower,
-  Pumpkin,
-  Squash,
-  Zucchini,
-  Eggplant,
-  Radish,
-  Turnip,
-  Beet,
-  Cabbage,
-  Cauliflower,
-  Brussels,
-  Artichoke,
-  Asparagus,
-  Celery,
-  Leek,
-  Scallion,
-  Shallot,
-  Ginger,
-  Turmeric,
-  Cinnamon,
-  Nutmeg,
-  Clove,
-  Cardamom,
-  Saffron,
-  Vanilla,
-  Mint,
-  Basil,
-  Oregano,
-  Thyme,
-  Rosemary,
-  Sage,
-  Parsley,
-  Cilantro,
-  Dill,
-  Chive,
-  Tarragon,
-  Bay,
-  Lavender,
-  Chamomile,
-  Jasmine,
-  Rose,
-  Lily,
-  Tulip,
-  Daisy,
-  Sunflower as Sun2,
-  Orchid,
-  Hibiscus,
-  Peony,
-  Carnation,
-  Chrysanthemum,
-  Marigold,
-  Pansy,
-  Violet,
-  Iris,
-  Daffodil,
-  Hyacinth,
-  Crocus,
-  Snowdrop,
-  Bluebell,
-  Poppy,
-  Forget,
-  Morning,
-  Evening,
-  Four,
-  Foxglove,
-  Hollyhock,
-  Delphinium,
-  Larkspur,
-  Snapdragon,
-  Sweet,
-  Zinnia,
-  Cosmos,
-  Aster,
-  Dahlia,
-  Gladiolus,
-  Freesia,
-  Anemone,
-  Ranunculus,
-  Petunia,
-  Impatiens,
-  Begonia,
-  Geranium,
-  Fuchsia,
-  Azalea,
-  Rhododendron,
-  Camellia,
-  Magnolia,
-  Dogwood,
-  Cherry2,
-  Plum2,
-  Peach2,
-  Apple2,
-  Pear2,
-  Quince,
-  Persimmon,
-  Pomelo,
-  Grapefruit,
-  Tangerine,
-  Mandarin,
-  Clementine,
-  Satsuma,
-  Yuzu,
-  Bergamot,
-  Citron,
-  Buddha,
-  Finger,
-  Key2,
-  Persian,
-  Blood,
-  Navel,
-  Valencia,
-  Jaffa,
-  Seville,
-  Meyer,
-  Eureka,
-  Lisbon,
-  Bearss,
-  Tahiti,
-  Kaffir,
-  Makrut,
-  Wild,
-  Australian,
-  Desert,
-  Finger2,
-  Round,
-  Red,
-  Pink,
-  White,
-  Yellow,
-  Green,
-  Blue,
-  Purple,
-  Orange2,
-  Brown,
-  Black,
-  Gray,
-  Silver,
-  Gold,
-  Bronze,
-  Copper,
-  Brass,
-  Steel,
-  Iron,
-  Aluminum,
-  Titanium,
-  Platinum,
-  Palladium,
-  Rhodium,
-  Iridium,
-  Osmium,
-  Ruthenium,
-  Rhenium,
-  Tungsten,
-  Tantalum,
-  Niobium,
-  Molybdenum,
-  Chromium,
-  Vanadium,
-  Manganese,
-  Cobalt,
-  Nickel,
-  Zinc,
-  Gallium,
-  Germanium,
-  Arsenic,
-  Selenium,
-  Bromine,
-  Krypton,
-  Rubidium,
-  Strontium,
-  Yttrium,
-  Zirconium,
-  Technetium,
-  Ruthenium2,
-  Rhodium2,
-  Palladium2,
-  Silver2,
-  Cadmium,
-  Indium,
-  Tin,
-  Antimony,
-  Tellurium,
-  Iodine,
-  Xenon,
-  Cesium,
-  Barium,
-  Lanthanum,
-  Cerium,
-  Praseodymium,
-  Neodymium,
-  Promethium,
-  Samarium,
-  Europium,
-  Gadolinium,
-  Terbium,
-  Dysprosium,
-  Holmium,
-  Erbium,
-  Thulium,
-  Ytterbium,
-  Lutetium,
-  Hafnium,
-  Tantalum2,
-  Tungsten2,
-  Rhenium2,
-  Osmium2,
-  Iridium2,
-  Platinum2,
-  Gold2,
-  Mercury,
-  Thallium,
-  Lead,
-  Bismuth,
-  Polonium,
-  Astatine,
-  Radon,
-  Francium,
-  Radium,
-  Actinium,
-  Thorium,
-  Protactinium,
-  Uranium,
-  Neptunium,
-  Plutonium,
-  Americium,
-  Curium,
-  Berkelium,
-  Californium,
-  Einsteinium,
-  Fermium,
-  Mendelevium,
-  Nobelium,
-  Lawrencium,
-  Rutherfordium,
-  Dubnium,
-  Seaborgium,
-  Bohrium,
-  Hassium,
-  Meitnerium,
-  Darmstadtium,
-  Roentgenium,
-  Copernicium,
-  Nihonium,
-  Flerovium,
-  Moscovium,
-  Livermorium,
-  Tennessine,
-  Oganesson
+  Gift,
+  Sparkles
 } from 'lucide-react';
 import { analytics } from './firebase';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from 'firebase/auth';
 
 // --- CONFIG ---
 const API_KEY_STORAGE_KEY = 'brokerflow_gemini_key';
+
+// Timezone and Currency Data
+const TIMEZONES = [
+  { code: 'UTC', name: 'UTC', offset: '+00:00' },
+  { code: 'EST', name: 'Eastern Time', offset: '-05:00' },
+  { code: 'PST', name: 'Pacific Time', offset: '-08:00' },
+  { code: 'GMT', name: 'Greenwich Mean Time', offset: '+00:00' },
+  { code: 'CET', name: 'Central European Time', offset: '+01:00' },
+  { code: 'JST', name: 'Japan Standard Time', offset: '+09:00' },
+  { code: 'AEST', name: 'Australian Eastern Time', offset: '+10:00' }
+];
+
+const CURRENCIES: CurrencyRate[] = [
+  { code: 'USD', name: 'US Dollar', rate: 1.0, symbol: '$' },
+  { code: 'EUR', name: 'Euro', rate: 0.85, symbol: '€' },
+  { code: 'GBP', name: 'British Pound', rate: 0.73, symbol: '£' },
+  { code: 'JPY', name: 'Japanese Yen', rate: 110.0, symbol: '¥' },
+  { code: 'CAD', name: 'Canadian Dollar', rate: 1.25, symbol: 'C$' },
+  { code: 'AUD', name: 'Australian Dollar', rate: 1.35, symbol: 'A$' }
+];
 
 // --- TYPES ---
 interface Policy {
@@ -577,6 +82,13 @@ interface BrokerUser {
   name: string;
   email: string | null;
   id: string;
+}
+
+interface CurrencyRate {
+  code: string;
+  name: string;
+  rate: number;
+  symbol: string;
 }
 
 // --- MOCK DATA ---
@@ -694,6 +206,196 @@ const Badge = ({ children, variant = 'default', className = "" }: { children: Re
   );
 };
 
+// Enhanced Pie Chart Component
+const EnhancedPieChart = ({ data, title }: { data: Record<string, number>; title: string }) => {
+  const total = Object.values(data).reduce((sum, val) => sum + val, 0);
+  const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#06B6D4', '#F97316'];
+  
+  let cumulativePercentage = 0;
+  const segments = Object.entries(data).map(([key, value], index) => {
+    const percentage = total > 0 ? (value / total) * 100 : 0;
+    const startAngle = (cumulativePercentage / 100) * 360;
+    cumulativePercentage += percentage;
+    const endAngle = (cumulativePercentage / 100) * 360;
+    
+    return {
+      key,
+      value,
+      percentage,
+      color: colors[index % colors.length],
+      startAngle,
+      endAngle
+    };
+  });
+
+  const createPath = (startAngle: number, endAngle: number) => {
+    const centerX = 50;
+    const centerY = 50;
+    const radius = 40;
+    
+    const startAngleRad = (startAngle - 90) * (Math.PI / 180);
+    const endAngleRad = (endAngle - 90) * (Math.PI / 180);
+    
+    const x1 = centerX + radius * Math.cos(startAngleRad);
+    const y1 = centerY + radius * Math.sin(startAngleRad);
+    const x2 = centerX + radius * Math.cos(endAngleRad);
+    const y2 = centerY + radius * Math.sin(endAngleRad);
+    
+    const largeArcFlag = endAngle - startAngle > 180 ? 1 : 0;
+    
+    return `M ${centerX} ${centerY} L ${x1} ${y1} A ${radius} ${radius} 0 ${largeArcFlag} 1 ${x2} ${y2} Z`;
+  };
+  
+  return (
+    <div className="space-y-6">
+      <h4 className="text-lg font-semibold text-gray-900 text-center">{title}</h4>
+      <div className="flex flex-col lg:flex-row items-center space-y-4 lg:space-y-0 lg:space-x-6">
+        <div className="relative">
+          <svg width="200" height="200" viewBox="0 0 100 100" className="transform -rotate-90">
+            {segments.map((segment, index) => (
+              <path
+                key={segment.key}
+                d={createPath(segment.startAngle, segment.endAngle)}
+                fill={segment.color}
+                className="hover:opacity-80 transition-opacity cursor-pointer"
+              />
+            ))}
+          </svg>
+          <div className="absolute inset-0 flex items-center justify-center">
+            <div className="text-center">
+              <div className="text-2xl font-bold text-gray-900">{total}</div>
+              <div className="text-xs text-gray-500">Total</div>
+            </div>
+          </div>
+        </div>
+        <div className="space-y-3 flex-1">
+          {segments.map((segment) => (
+            <div key={segment.key} className="flex items-center justify-between p-2 rounded-lg hover:bg-gray-50">
+              <div className="flex items-center space-x-3">
+                <div 
+                  className="w-4 h-4 rounded-full" 
+                  style={{ backgroundColor: segment.color }}
+                ></div>
+                <span className="text-sm font-medium text-gray-700">{segment.key}</span>
+              </div>
+              <div className="text-right">
+                <div className="text-sm font-bold text-gray-900">{segment.value}</div>
+                <div className="text-xs text-gray-500">{segment.percentage.toFixed(1)}%</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Simple Pie Chart Component (for dashboard)
+const SimplePieChart = ({ data, title }: { data: Record<string, number>; title: string }) => {
+  const total = Object.values(data).reduce((sum, val) => sum + val, 0);
+  const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6'];
+  
+  return (
+    <div className="space-y-4">
+      <h4 className="font-medium text-gray-900">{title}</h4>
+      <div className="space-y-2">
+        {Object.entries(data).map(([key, value], index) => {
+          const percentage = total > 0 ? (value / total) * 100 : 0;
+          return (
+            <div key={key} className="flex items-center justify-between">
+              <div className="flex items-center space-x-2">
+                <div 
+                  className="w-3 h-3 rounded-full" 
+                  style={{ backgroundColor: colors[index % colors.length] }}
+                ></div>
+                <span className="text-sm text-gray-600">{key}</span>
+              </div>
+              <div className="text-sm font-medium text-gray-900">
+                {value} ({percentage.toFixed(1)}%)
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// Enhanced Bar Chart Component
+const EnhancedBarChart = ({ data, title }: { data: Record<string, number>; title: string }) => {
+  const maxValue = Math.max(...Object.values(data));
+  const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444', '#8B5CF6', '#06B6D4'];
+  const total = Object.values(data).reduce((sum, val) => sum + val, 0);
+  
+  return (
+    <div className="space-y-6">
+      <h4 className="text-lg font-semibold text-gray-900 text-center">{title}</h4>
+      <div className="space-y-4">
+        {Object.entries(data).map(([key, value], index) => {
+          const width = maxValue > 0 ? (value / maxValue) * 100 : 0;
+          const percentage = total > 0 ? (value / total) * 100 : 0;
+          return (
+            <div key={key} className="space-y-2">
+              <div className="flex justify-between items-center">
+                <span className="text-sm font-medium text-gray-700">{key}</span>
+                <div className="text-right">
+                  <span className="text-sm font-bold text-gray-900">{value}</span>
+                  <span className="text-xs text-gray-500 ml-1">({percentage.toFixed(1)}%)</span>
+                </div>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
+                <div 
+                  className="h-3 rounded-full transition-all duration-500 ease-out relative" 
+                  style={{ 
+                    width: `${width}%`, 
+                    backgroundColor: colors[index % colors.length] 
+                  }}
+                >
+                  <div className="absolute inset-0 bg-gradient-to-r from-transparent to-white opacity-20"></div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
+// Simple Bar Chart Component (for dashboard)
+const SimpleBarChart = ({ data, title }: { data: Record<string, number>; title: string }) => {
+  const maxValue = Math.max(...Object.values(data));
+  const colors = ['#3B82F6', '#10B981', '#F59E0B', '#EF4444'];
+  
+  return (
+    <div className="space-y-4">
+      <h4 className="font-medium text-gray-900">{title}</h4>
+      <div className="space-y-3">
+        {Object.entries(data).map(([key, value], index) => {
+          const width = maxValue > 0 ? (value / maxValue) * 100 : 0;
+          return (
+            <div key={key} className="space-y-1">
+              <div className="flex justify-between text-sm">
+                <span className="text-gray-600">{key}</span>
+                <span className="font-medium text-gray-900">{value}</span>
+              </div>
+              <div className="w-full bg-gray-200 rounded-full h-2">
+                <div 
+                  className="h-2 rounded-full transition-all duration-300" 
+                  style={{ 
+                    width: `${width}%`, 
+                    backgroundColor: colors[index % colors.length] 
+                  }}
+                ></div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+};
+
 // --- MAIN APP ---
 export default function BrokerFlowApp() {
   // --- STATE ---
@@ -733,6 +435,34 @@ export default function BrokerFlowApp() {
   const [premiumAdjustment, setPremiumAdjustment] = useState(0);
   const [deductibleChange, setDeductibleChange] = useState(0);
   
+  // New Policy State
+  const [showAddPolicy, setShowAddPolicy] = useState(false);
+  const [newPolicy, setNewPolicy] = useState({
+    client: '',
+    industry: '',
+    type: '',
+    premium: '',
+    expiryDate: '',
+    claims: '0',
+    sourceId: ''
+  });
+  
+  // Timezone and Currency State
+  const [selectedTimezone, setSelectedTimezone] = useState(() => 
+    localStorage.getItem('brokerflow_timezone') || 'EST'
+  );
+  const [selectedCurrency, setSelectedCurrency] = useState(() => 
+    localStorage.getItem('brokerflow_currency') || 'USD'
+  );
+  
+  // Broker Coins State
+  const [brokerCoins, setBrokerCoins] = useState(() => 
+    parseInt(localStorage.getItem('brokerflow_coins') || '0')
+  );
+  const [showCoinAnimation, setShowCoinAnimation] = useState(false);
+  const [showRewardsModal, setShowRewardsModal] = useState(false);
+  const [redeemAmount, setRedeemAmount] = useState('');
+  
   // --- EFFECTS ---
   useEffect(() => {
     localStorage.setItem('brokerflow_weights', JSON.stringify(weights));
@@ -745,6 +475,18 @@ export default function BrokerFlowApp() {
   useEffect(() => {
     localStorage.setItem(API_KEY_STORAGE_KEY, apiKey);
   }, [apiKey]);
+
+  useEffect(() => {
+    localStorage.setItem('brokerflow_timezone', selectedTimezone);
+  }, [selectedTimezone]);
+
+  useEffect(() => {
+    localStorage.setItem('brokerflow_currency', selectedCurrency);
+  }, [selectedCurrency]);
+
+  useEffect(() => {
+    localStorage.setItem('brokerflow_coins', brokerCoins.toString());
+  }, [brokerCoins]);
 
   // --- LOGIC ---
   const addToast = (message: string, type: 'success' | 'error' | 'info' = 'info') => {
@@ -803,6 +545,37 @@ export default function BrokerFlowApp() {
     return Math.max(0, Math.min(100, 90 - (2 * premiumAdjustment) + (0.5 * deductibleChange)));
   }, [premiumAdjustment, deductibleChange]);
 
+  // Currency conversion helper
+  const convertCurrency = (amount: number) => {
+    const currency = CURRENCIES.find(c => c.code === selectedCurrency) || CURRENCIES[0];
+    return amount * currency.rate;
+  };
+
+  const formatCurrency = (amount: number) => {
+    const currency = CURRENCIES.find(c => c.code === selectedCurrency) || CURRENCIES[0];
+    const convertedAmount = convertCurrency(amount);
+    return `${currency.symbol}${convertedAmount.toLocaleString(undefined, { 
+      minimumFractionDigits: 0, 
+      maximumFractionDigits: 0 
+    })}`;
+  };
+
+  const redeemCoins = () => {
+    const amount = parseInt(redeemAmount);
+    if (!amount || amount > brokerCoins) {
+      addToast('Invalid redemption amount', 'error');
+      return;
+    }
+    
+    setBrokerCoins(prev => prev - amount);
+    const usdValue = amount * 5;
+    const convertedValue = formatCurrency(usdValue);
+    
+    addToast(`Redeemed ${amount} coins for ${convertedValue}!`, 'success');
+    setRedeemAmount('');
+    setShowRewardsModal(false);
+  };
+
   const scoredData = useMemo(() => {
     return policies.map(policy => {
       const days = calculateDaysToExpiry(policy.expiryDate);
@@ -811,9 +584,86 @@ export default function BrokerFlowApp() {
     }).sort((a, b) => b.score - a.score);
   }, [weights, policies]);
 
+  // Chart Data
+  const chartData = useMemo(() => {
+    const statusCounts = policies.reduce((acc, policy) => {
+      acc[policy.status] = (acc[policy.status] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const industryData = policies.reduce((acc, policy) => {
+      acc[policy.industry] = (acc[policy.industry] || 0) + 1;
+      return acc;
+    }, {} as Record<string, number>);
+
+    const premiumRanges = {
+      '0-25K': 0,
+      '25K-50K': 0,
+      '50K-100K': 0,
+      '100K+': 0
+    };
+
+    policies.forEach(policy => {
+      if (policy.premium < 25000) premiumRanges['0-25K']++;
+      else if (policy.premium < 50000) premiumRanges['25K-50K']++;
+      else if (policy.premium < 100000) premiumRanges['50K-100K']++;
+      else premiumRanges['100K+']++;
+    });
+
+    return { statusCounts, industryData, premiumRanges };
+  }, [policies]);
+
+  const addNewPolicy = () => {
+    if (!newPolicy.client || !newPolicy.premium || !newPolicy.expiryDate) {
+      addToast('Please fill in all required fields', 'error');
+      return;
+    }
+
+    const policy: Policy = {
+      id: `POL-${String(policies.length + 1).padStart(3, '0')}`,
+      client: newPolicy.client,
+      industry: newPolicy.industry || 'General',
+      type: newPolicy.type || 'General Liability',
+      premium: parseInt(newPolicy.premium),
+      expiryDate: newPolicy.expiryDate,
+      claims: parseInt(newPolicy.claims),
+      status: 'Detected',
+      sourceId: newPolicy.sourceId || `SFDC-${Math.floor(Math.random() * 9999)}`,
+      image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=200&h=200"
+    };
+
+    setPolicies(prev => [...prev, policy]);
+    setNewPolicy({
+      client: '',
+      industry: '',
+      type: '',
+      premium: '',
+      expiryDate: '',
+      claims: '0',
+      sourceId: ''
+    });
+    setShowAddPolicy(false);
+    
+    // Award broker coin
+    setBrokerCoins(prev => prev + 1);
+    setShowCoinAnimation(true);
+    setTimeout(() => setShowCoinAnimation(false), 3000);
+    
+    addToast('Policy added successfully! +1 Broker Coin earned!', 'success');
+  };
+
   const updatePolicyStatus = (id: string, newStatus: Policy['status']) => {
     setPolicies(prev => prev.map(p => p.id === id ? { ...p, status: newStatus } : p));
-    addToast(`Policy ${id} status updated to ${newStatus}`, 'success');
+    
+    // Award coins for sending proposals
+    if (newStatus === 'Sent') {
+      setBrokerCoins(prev => prev + 2);
+      setShowCoinAnimation(true);
+      setTimeout(() => setShowCoinAnimation(false), 3000);
+      addToast(`Policy ${id} sent! +2 Broker Coins earned!`, 'success');
+    } else {
+      addToast(`Policy ${id} status updated to ${newStatus}`, 'success');
+    }
   };
 
   const generateBrief = async (policy: Policy) => {
@@ -867,7 +717,13 @@ export default function BrokerFlowApp() {
         setBrief(parsedBrief);
         setGenerationState('complete');
         updatePolicyStatus(policy.id, 'Analyzed');
-        addToast('Analysis complete!', 'success');
+        
+        // Award coin for analysis
+        setBrokerCoins(prev => prev + 1);
+        setShowCoinAnimation(true);
+        setTimeout(() => setShowCoinAnimation(false), 3000);
+        
+        addToast('Analysis complete! +1 Broker Coin earned!', 'success');
       } catch (error) {
         console.error('Failed to parse AI response:', error);
         setBrief({
@@ -881,7 +737,13 @@ export default function BrokerFlowApp() {
           renewalProbability: "75%"
         });
         setGenerationState('complete');
-        addToast('Analysis complete with formatting adjustments', 'info');
+        
+        // Award coin for analysis
+        setBrokerCoins(prev => prev + 1);
+        setShowCoinAnimation(true);
+        setTimeout(() => setShowCoinAnimation(false), 3000);
+        
+        addToast('Analysis complete with formatting adjustments! +1 Broker Coin earned!', 'info');
       }
     } else {
       setGenerationState('idle');
@@ -996,6 +858,7 @@ export default function BrokerFlowApp() {
           {[
             { id: 'dashboard', label: 'Dashboard', icon: LayoutDashboard },
             { id: 'pipeline', label: 'Pipeline', icon: ListFilter },
+            { id: 'reports', label: 'Analysis Reports', icon: BarChart3 },
             { id: 'copilot', label: 'AI Copilot', icon: Bot },
             { id: 'settings', label: 'Settings', icon: Settings }
           ].map(tab => (
@@ -1040,6 +903,63 @@ export default function BrokerFlowApp() {
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold text-gray-900">Dashboard</h2>
                 <div className="flex items-center space-x-4">
+                  {/* Timezone Dropdown */}
+                  <div className="relative">
+                    <select
+                      value={selectedTimezone}
+                      onChange={(e) => setSelectedTimezone(e.target.value)}
+                      className="appearance-none bg-white border border-gray-300 rounded-md px-3 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      {TIMEZONES.map(tz => (
+                        <option key={tz.code} value={tz.code}>
+                          {tz.name} ({tz.offset})
+                        </option>
+                      ))}
+                    </select>
+                    <Globe className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+                  </div>
+                  
+                  {/* Currency Dropdown */}
+                  <div className="relative">
+                    <select
+                      value={selectedCurrency}
+                      onChange={(e) => setSelectedCurrency(e.target.value)}
+                      className="appearance-none bg-white border border-gray-300 rounded-md px-3 py-2 pr-8 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                    >
+                      {CURRENCIES.map(currency => (
+                        <option key={currency.code} value={currency.code}>
+                          {currency.code} - {currency.name}
+                        </option>
+                      ))}
+                    </select>
+                    <DollarSign className="absolute right-2 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400 pointer-events-none" />
+                  </div>
+                  
+                  {/* Broker Coins Display */}
+                  <button
+                    onClick={() => setShowRewardsModal(true)}
+                    className="flex items-center space-x-2 px-3 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-md hover:from-yellow-500 hover:to-orange-600 transition-all duration-200 shadow-lg"
+                  >
+                    <Coins className="w-4 h-4" />
+                    <span className="font-semibold">{brokerCoins}</span>
+                    <span className="text-xs">Coins</span>
+                  </button>
+                  
+                  <div className="relative">
+                    <button className="p-2 text-gray-600 hover:text-gray-900 hover:bg-gray-100 rounded-full transition-colors">
+                      <Bell className="w-5 h-5" />
+                    </button>
+                    <span className="absolute -top-1 -right-1 w-3 h-3 bg-red-500 rounded-full flex items-center justify-center">
+                      <span className="text-xs text-white font-bold">{scoredData.filter(p => p.days <= 30).length}</span>
+                    </span>
+                  </div>
+                  <button
+                    onClick={() => setShowAddPolicy(true)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    <Plus className="w-4 h-4" />
+                    <span>Add Policy</span>
+                  </button>
                   <Badge variant="info" className="flex items-center space-x-1">
                     <Database className="w-3 h-3" />
                     <span>{policies.length} Policies</span>
@@ -1054,7 +974,7 @@ export default function BrokerFlowApp() {
                     <div>
                       <p className="text-sm font-medium text-gray-600">Total Premium</p>
                       <p className="text-2xl font-bold text-gray-900">
-                        ${policies.reduce((sum, p) => sum + p.premium, 0).toLocaleString()}
+                        {formatCurrency(policies.reduce((sum, p) => sum + p.premium, 0))}
                       </p>
                     </div>
                     <DollarSign className="w-8 h-8 text-green-600" />
@@ -1098,6 +1018,19 @@ export default function BrokerFlowApp() {
                 </Card>
               </div>
 
+              {/* Charts Section */}
+              <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <Card>
+                  <SimplePieChart data={chartData.statusCounts} title="Policy Status Distribution" />
+                </Card>
+                <Card>
+                  <SimplePieChart data={chartData.industryData} title="Industry Breakdown" />
+                </Card>
+                <Card>
+                  <SimpleBarChart data={chartData.premiumRanges} title="Premium Ranges" />
+                </Card>
+              </div>
+
               {/* Top Priorities */}
               <Card>
                 <div className="flex items-center justify-between mb-4">
@@ -1111,7 +1044,7 @@ export default function BrokerFlowApp() {
                         <img src={policy.image} alt={policy.client} className="w-12 h-12 rounded-lg object-cover" />
                         <div>
                           <h4 className="font-medium text-gray-900">{policy.client}</h4>
-                          <p className="text-sm text-gray-600">{policy.type} • ${policy.premium.toLocaleString()}</p>
+                          <p className="text-sm text-gray-600">{policy.type} • {formatCurrency(policy.premium)}</p>
                         </div>
                       </div>
                       <div className="flex items-center space-x-4">
@@ -1137,6 +1070,13 @@ export default function BrokerFlowApp() {
               <div className="flex items-center justify-between">
                 <h2 className="text-2xl font-bold text-gray-900">Renewal Pipeline</h2>
                 <div className="flex items-center space-x-4">
+                  <button
+                    onClick={() => setShowAddPolicy(true)}
+                    className="flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+                  >
+                    <Plus className="w-4 h-4" />
+                    <span>Add Policy</span>
+                  </button>
                   <Badge variant="info">{policies.length} Total Policies</Badge>
                 </div>
               </div>
@@ -1173,7 +1113,7 @@ export default function BrokerFlowApp() {
                             <div className="text-sm text-gray-500">{policy.sourceId}</div>
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                            ${policy.premium.toLocaleString()}
+                            {formatCurrency(policy.premium)}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
                             <div className="text-sm text-gray-900">{policy.expiryDate}</div>
@@ -1453,6 +1393,94 @@ export default function BrokerFlowApp() {
             </div>
           )}
 
+          {activeTab === 'reports' && (
+            <div className="space-y-6">
+              <div className="flex items-center justify-between">
+                <h2 className="text-2xl font-bold text-gray-900">Analysis Reports</h2>
+                <div className="flex items-center space-x-2">
+                  <TrendingUp className="w-5 h-5 text-blue-600" />
+                  <span className="text-sm text-gray-600">Real-time Analytics</span>
+                </div>
+              </div>
+
+              {/* Key Metrics Overview */}
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <Card>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">{formatCurrency(policies.reduce((sum, p) => sum + p.premium, 0) / 1000000).replace(/[^0-9.,]/g, '')}M</div>
+                    <div className="text-sm text-gray-600 mt-1">Total Portfolio Value</div>
+                  </div>
+                </Card>
+                <Card>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-green-600">{((policies.filter(p => p.status === 'Sent').length / policies.length) * 100).toFixed(1)}%</div>
+                    <div className="text-sm text-gray-600 mt-1">Completion Rate</div>
+                  </div>
+                </Card>
+                <Card>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-orange-600">{scoredData.filter(p => p.days <= 30).length}</div>
+                    <div className="text-sm text-gray-600 mt-1">Urgent Renewals</div>
+                  </div>
+                </Card>
+                <Card>
+                  <div className="text-center">
+                    <div className="text-3xl font-bold text-purple-600">{formatCurrency(policies.reduce((sum, p) => sum + p.premium, 0) / policies.length / 1000).replace(/[^0-9.,]/g, '')}K</div>
+                    <div className="text-sm text-gray-600 mt-1">Avg Premium</div>
+                  </div>
+                </Card>
+              </div>
+
+              {/* Enhanced Charts Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <Card className="p-8">
+                  <EnhancedPieChart data={chartData.statusCounts} title="Policy Status Distribution" />
+                </Card>
+                <Card className="p-8">
+                  <EnhancedPieChart data={chartData.industryData} title="Industry Portfolio Breakdown" />
+                </Card>
+              </div>
+
+              {/* Bar Charts */}
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <Card className="p-8">
+                  <EnhancedBarChart data={chartData.premiumRanges} title="Premium Distribution Analysis" />
+                </Card>
+                <Card className="p-8">
+                  <EnhancedBarChart 
+                    data={policies.reduce((acc, policy) => {
+                      acc[policy.type] = (acc[policy.type] || 0) + 1;
+                      return acc;
+                    }, {} as Record<string, number>)} 
+                    title="Policy Type Distribution" 
+                  />
+                </Card>
+              </div>
+
+              {/* Risk Analysis */}
+              <Card>
+                <h3 className="text-lg font-semibold text-gray-900 mb-6">Risk Analysis Summary</h3>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  <div className="text-center p-4 bg-red-50 rounded-lg">
+                    <div className="text-2xl font-bold text-red-600">{scoredData.filter(p => p.score >= 70).length}</div>
+                    <div className="text-sm text-red-700 mt-1">High Risk Policies</div>
+                    <div className="text-xs text-red-600 mt-2">Require immediate attention</div>
+                  </div>
+                  <div className="text-center p-4 bg-yellow-50 rounded-lg">
+                    <div className="text-2xl font-bold text-yellow-600">{scoredData.filter(p => p.score >= 50 && p.score < 70).length}</div>
+                    <div className="text-sm text-yellow-700 mt-1">Medium Risk Policies</div>
+                    <div className="text-xs text-yellow-600 mt-2">Monitor closely</div>
+                  </div>
+                  <div className="text-center p-4 bg-green-50 rounded-lg">
+                    <div className="text-2xl font-bold text-green-600">{scoredData.filter(p => p.score < 50).length}</div>
+                    <div className="text-sm text-green-700 mt-1">Low Risk Policies</div>
+                    <div className="text-xs text-green-600 mt-2">Stable renewals</div>
+                  </div>
+                </div>
+              </Card>
+            </div>
+          )}
+
           {activeTab === 'settings' && (
             <div className="space-y-6">
               <h2 className="text-2xl font-bold text-gray-900">Settings</h2>
@@ -1533,6 +1561,217 @@ export default function BrokerFlowApp() {
           )}
         </main>
       </div>
+
+      {/* Add Policy Modal */}
+      {showAddPolicy && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <Card className="w-full max-w-md mx-4">
+            <div className="flex items-center justify-between mb-6">
+              <h3 className="text-lg font-semibold text-gray-900">Add New Policy</h3>
+              <button
+                onClick={() => setShowAddPolicy(false)}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            
+            <div className="space-y-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Client Name *</label>
+                <input
+                  type="text"
+                  value={newPolicy.client}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, client: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter client name"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Industry</label>
+                <select
+                  value={newPolicy.industry}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, industry: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Select Industry</option>
+                  <option value="Technology">Technology</option>
+                  <option value="Manufacturing">Manufacturing</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Finance">Finance</option>
+                  <option value="Real Estate">Real Estate</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Defense">Defense</option>
+                  <option value="Retail">Retail</option>
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Policy Type</label>
+                <select
+                  value={newPolicy.type}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, type: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                >
+                  <option value="">Select Policy Type</option>
+                  <option value="General Liability">General Liability</option>
+                  <option value="Cyber Liability">Cyber Liability</option>
+                  <option value="Workers Comp">Workers Comp</option>
+                  <option value="Property">Property</option>
+                  <option value="D&O">D&O</option>
+                  <option value="Professional Liability">Professional Liability</option>
+                  <option value="Auto">Auto</option>
+                </select>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Premium Amount *</label>
+                <input
+                  type="number"
+                  value={newPolicy.premium}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, premium: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter premium amount"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Expiry Date *</label>
+                <input
+                  type="date"
+                  value={newPolicy.expiryDate}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, expiryDate: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Claims Count</label>
+                <input
+                  type="number"
+                  value={newPolicy.claims}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, claims: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Number of claims"
+                  min="0"
+                />
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Source ID</label>
+                <input
+                  type="text"
+                  value={newPolicy.sourceId}
+                  onChange={(e) => setNewPolicy(prev => ({ ...prev, sourceId: e.target.value }))}
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Enter source ID (optional)"
+                />
+              </div>
+            </div>
+            
+            <div className="flex space-x-3 mt-6">
+              <button
+                onClick={() => setShowAddPolicy(false)}
+                className="flex-1 px-4 py-2 border border-gray-300 text-gray-700 rounded-md hover:bg-gray-50 transition-colors"
+              >
+                Cancel
+              </button>
+              <button
+                onClick={addNewPolicy}
+                className="flex-1 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors"
+              >
+                Add Policy
+              </button>
+            </div>
+          </Card>
+        </div>
+      )}
+
+      {/* Coin Animation */}
+      {showCoinAnimation && (
+        <div className="fixed inset-0 pointer-events-none z-50 flex items-center justify-center">
+          <div className="animate-bounce">
+            <div className="flex items-center space-x-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white px-6 py-4 rounded-full shadow-2xl">
+              <Sparkles className="w-6 h-6 animate-spin" />
+              <Coins className="w-8 h-8" />
+              <span className="text-xl font-bold">+1 Broker Coin!</span>
+              <Sparkles className="w-6 h-6 animate-spin" />
+            </div>
+          </div>
+        </div>
+      )}
+
+      {/* Rewards Modal */}
+      {showRewardsModal && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <Card className="w-full max-w-md mx-4">
+            <div className="flex items-center justify-between mb-6">
+              <div className="flex items-center space-x-2">
+                <Gift className="w-6 h-6 text-yellow-500" />
+                <h3 className="text-lg font-semibold text-gray-900">Broker Rewards</h3>
+              </div>
+              <button
+                onClick={() => setShowRewardsModal(false)}
+                className="text-gray-400 hover:text-gray-600"
+              >
+                <X className="w-5 h-5" />
+              </button>
+            </div>
+            
+            <div className="space-y-6">
+              <div className="text-center p-6 bg-gradient-to-r from-yellow-50 to-orange-50 rounded-lg">
+                <Coins className="w-16 h-16 text-yellow-500 mx-auto mb-4" />
+                <h4 className="text-2xl font-bold text-gray-900">{brokerCoins} Broker Coins</h4>
+                <p className="text-sm text-gray-600 mt-2">
+                  Total Value: {formatCurrency(brokerCoins * 5)}
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  1 Broker Coin = $5 USD
+                </p>
+              </div>
+              
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">
+                  Redeem Coins
+                </label>
+                <div className="flex space-x-2">
+                  <input
+                    type="number"
+                    value={redeemAmount}
+                    onChange={(e) => setRedeemAmount(e.target.value)}
+                    className="flex-1 px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    placeholder="Enter amount"
+                    max={brokerCoins}
+                    min="1"
+                  />
+                  <button
+                    onClick={redeemCoins}
+                    disabled={!redeemAmount || parseInt(redeemAmount) > brokerCoins}
+                    className="px-4 py-2 bg-gradient-to-r from-yellow-400 to-orange-500 text-white rounded-md hover:from-yellow-500 hover:to-orange-600 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
+                  >
+                    Redeem
+                  </button>
+                </div>
+                {redeemAmount && parseInt(redeemAmount) <= brokerCoins && (
+                  <p className="text-sm text-green-600 mt-2">
+                    You will receive: {formatCurrency(parseInt(redeemAmount) * 5)}
+                  </p>
+                )}
+              </div>
+              
+              <div className="bg-blue-50 p-4 rounded-lg">
+                <h5 className="font-medium text-blue-900 mb-2">How to Earn Coins:</h5>
+                <ul className="text-sm text-blue-700 space-y-1">
+                  <li>• Add a new policy: +1 Coin</li>
+                  <li>• Complete policy analysis: +1 Coin</li>
+                  <li>• Send renewal proposal: +2 Coins</li>
+                </ul>
+              </div>
+            </div>
+          </Card>
+        </div>
+      )}
 
       {/* Toast Container */}
       <div className="fixed top-4 right-4 space-y-2 z-50">
